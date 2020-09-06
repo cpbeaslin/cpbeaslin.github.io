@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <video id="video" controls></video>
+    <script>
+    if(Hls.isSupported())
+    {
+        var video = document.getElementById('video');
+        var hls = new Hls();
+        hls.loadSource('https://5834b44b7e3f.us-west-2.playback.live-video.net/api/video/v1/us-west-2.752211818201.channel.c6xgjU3gbiY2.m3u8?player_version=1.0.0');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED,function()
+        {
+            video.play();
+        });
+    }
+    else if (video.canPlayType('application/vnd.apple.mpegurl'))
+    {
+        video.src = 'https://5834b44b7e3f.us-west-2.playback.live-video.net/api/video/v1/us-west-2.752211818201.channel.c6xgjU3gbiY2.m3u8?player_version=1.0.0';
+        video.addEventListener('canplay',function()
+        {
+            video.play();
+        });
+    }
+    </script>
+  </body>
+</html>
