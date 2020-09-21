@@ -28,4 +28,13 @@
   background-color: #4CAF50;
   color: white;
 }
+body {
+	background-color: #4F4F4F
+}
 
+.name {
+	text-align: center;
+	color: #F3F3F3;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 40px;
+}
