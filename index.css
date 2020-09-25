@@ -39,3 +39,9 @@ body {
 	text-align: center;
 }
 
+#Image1 {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
