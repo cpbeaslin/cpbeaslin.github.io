@@ -46,6 +46,9 @@ body {
   width: 50%;
 }
 
-#sadge img{
-  width:50%;
+.sadge {
+  display:block;
+  margin-left:auto;
+  margin-left: auto;
+  margin-top: 100px;
 }
